@@ -1,0 +1,142 @@
+$b-color: #e6e6e6;
+$b-color-2: #c3c3c3;
+$font-name: system-ui;
+
+
+.ui-login-form {
+  font-family: $font-name;
+  font-size: 18px;
+  margin: 200px auto 0;
+  max-width: 300px;
+
+  .ui-title-container {
+    text-align: center;
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+
+  .ui-login-container, .ui-password-container {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin-bottom: 15px;
+
+    input {
+      height: 30px;
+      border-radius: 5px;
+      border: 1px solid $b-color;
+      border-bottom: 2px solid $b-color;
+      padding: 2px 5px;
+      max-width: 300px;
+
+      &:active, &:focus {
+        outline: none !important;
+        border-color: $b-color-2;
+        border-top: 1px solid $b-color;
+        border-bottom: 2px solid $b-color-2;
+      }
+    }
+
+    label {
+      margin-bottom: 10px;
+    }
+  }
+
+  .ui-checkbox-container {
+    text-align: end;
+    margin-bottom: 15px;
+    width: 300px;
+
+    .ui-custom-checkbox {
+      margin-left: 20px;
+      background: white;
+      border: 1px solid $b-color;
+      border-bottom: 2px solid $b-color;
+      -webkit-appearance: none;
+      padding: 8px;
+      border-radius: 2px;
+      display: inline-block;
+      position: relative;
+      top: 6px;
+
+      &:checked:after {
+        content: '\2714';
+        font-size: 10px;
+        position: absolute;
+        top: 2px;
+        left: 4px;
+        color: #000000;
+      }
+
+      &:active, &:focus {
+        outline: none;
+        border-color: $b-color-2;
+        border-top: 1px solid $b-color;
+        border-bottom: 2px solid $b-color-2;
+      }
+    }
+  }
+
+  .ui-button-container {
+    display: flex;
+    justify-content: center;
+    width: 300px;
+
+    button {
+      height: 37px;
+      width: 100%;
+      max-width: 300px;
+      font-size: 18px;
+      font-family: $font-name;
+      border-radius: 5px;
+      border: 1px solid #dddddd;
+      border-bottom: 2px solid #dddddd;
+
+      &:hover, &:active, &:focus {
+        outline: none;
+        border-color: $b-color-2;
+        border-top: 1px solid $b-color;
+        border-bottom: 2px solid $b-color-2;
+        background: linear-gradient(135deg, rgb(205, 205, 205), rgb(185, 185, 185));
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .ui-login-form {
+    max-width: 620px;
+
+    .ui-first-container, .ui-second-container {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 10px;
+
+      .ui-login-container, .ui-checkbox-container {
+        margin-right: 20px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .ui-login-form {
+    max-width: 620px;
+
+    .ui-first-container {
+      display: flex;
+      flex-direction: row;
+
+      .ui-login-container {
+        margin-right: 20px;
+      }
+    }
+
+    .ui-second-container {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+    }
+  }
+}
