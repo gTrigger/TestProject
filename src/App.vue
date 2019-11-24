@@ -11,6 +11,9 @@
         name: 'App',
         components: {
             AppLayout,
+        },
+        mounted() {
+            this.$store.state.company.companies = this.$store.state.company.companies.concat(JSON.parse(localStorage.getItem('companies')));
         }
     }
 </script>

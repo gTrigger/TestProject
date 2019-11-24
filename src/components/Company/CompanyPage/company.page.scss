@@ -1,0 +1,49 @@
+$font-name: system-ui;
+
+.ui-company-page {
+  padding: 40px;
+  display: flex;
+  flex-direction: row;
+  font-size: 20px;
+
+  img {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+  }
+
+  .ui-company-info {
+    padding-left: 40px;
+    width: 100%;
+
+    .ui-title-container {
+      font-family: $font-name;
+      font-size: 24px;
+      margin-bottom: 20px;
+
+      p {
+        margin: 0;
+      }
+    }
+
+    .ui-contacts-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      p {
+        margin: 15px 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .ui-company-page {
+    flex-direction: column;
+
+    .ui-company-info {
+      padding: 40px 0 0 0;
+    }
+  }
+}

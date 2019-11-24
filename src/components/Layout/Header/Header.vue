@@ -1,8 +1,4 @@
 <template>
     <div class="ui-header"></div>
 </template>
-<script>
-    export default {
-        name: 'AppHeader'
-    }
-</script>
+<script src="./header.js"></script>

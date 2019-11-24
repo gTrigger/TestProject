@@ -2,7 +2,6 @@ $b-color: #e6e6e6;
 $b-color-2: #c3c3c3;
 $font-name: system-ui;
 
-
 .ui-login-form {
   font-family: $font-name;
   font-size: 18px;
@@ -82,25 +81,6 @@ $font-name: system-ui;
     display: flex;
     justify-content: center;
     width: 300px;
-
-    button {
-      height: 37px;
-      width: 100%;
-      max-width: 300px;
-      font-size: 18px;
-      font-family: $font-name;
-      border-radius: 5px;
-      border: 1px solid #dddddd;
-      border-bottom: 2px solid #dddddd;
-
-      &:hover, &:active, &:focus {
-        outline: none;
-        border-color: $b-color-2;
-        border-top: 1px solid $b-color;
-        border-bottom: 2px solid $b-color-2;
-        background: linear-gradient(135deg, rgb(205, 205, 205), rgb(185, 185, 185));
-      }
-    }
   }
 }
 
